@@ -1,0 +1,182 @@
+
+@charset "utf-8";
+
+/* Colours */
+body {
+    color: rgb(220, 220, 220);
+    background-color: hsl(0, 0%, 12%);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(35, 35, 35);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    color: white;
+    background-color: rgb(10, 10, 10);
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: hsl(120, 45%, 45%);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+header p {
+    color: rgb(190, 190, 190);
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 5px 0 0 0;
+}
+
+/* Layout */
+.columns {
+    width: 100%;
+}
+
+.columns::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    color: rgb(220, 220, 220);
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+}
+
+main {
+    box-sizing: border-box;
+    float: left;
+    width: 55%;
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+}
+
+aside {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    color: rgb(220, 220, 220);
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+}
+
+/* Headings */
+h2 {
+    color: hsl(120, 45%, 50%);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+article h2 {
+    border-left: 6px solid rgb(40, 150, 70);
+    padding: 5px 10px;
+}
+
+aside h2 {
+    border-bottom: 3px solid hsl(120, 45%, 40%);
+    padding-bottom: 5px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 8px 0;
+}
+
+nav a:link {
+    color: hsl(120, 45%, 55%);
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: rgb(150, 190, 150);
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgb(40, 120, 60);
+}
+
+nav a:active {
+    color: black;
+}
+
+/* Article */
+article p {
+    margin: 10px 0;
+}
+
+article ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+article li:first-of-type {
+    list-style-type: circle;
+}
+
+article li:nth-of-type(2) {
+    list-style-type: square;
+}
+
+article li:last-of-type {
+    list-style-type: disc;
+}
+
+/* Customer quotes */
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+blockquote::before {
+    content: open-quote;
+    color: hsl(120, 45%, 50%);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+blockquote::after {
+    content: close-quote;
+    color: hsl(120, 45%, 50%);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    font-size: 0.8em;
+    font-variant: small-caps;
+    padding: 15px;
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+}
+
